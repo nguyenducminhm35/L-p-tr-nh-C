@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+</head>
+<body>
+<form action="https://www.example.com/form">
+    <fieldset>
+        <legend>Your Details</legend>
+        <label>Name:<input type="text" name="Name" /></label><br />
+        <label>Email:<input type="text" name="email" /></label><br />
+    </fieldset>
+    <fieldset>
+        <legend>Your Review:</legend>
+        <label>How did you hear about us?</label>
+        <select name="instruments" size="1" multiple="multiple">
+            <option value="google" selected="selected">Google</option>
+            <option value="friend" selected="selected">Friend</option>
+            <option value="advert" selected="selected">Advert</option>
+            <option value="other" selected="selected">Other</option>
+        </select><br />
+        <label>Would you visit again?</label><br />
+        <input type="radio" name="again" value="yes" /> Yes
+        <input type="radio" name="again" value="no" /> No
+        <input type="radio" name="again" value="maybe" /> Maybe
+        <br />
+        <label>Comments:</label><br />
+        <textarea name="comments" cols="20" rows="4"
+                  placeholder="Enter you comments...">
+            </textarea><br />
+        <input type="checkbox" name="choose" value="sign me up for email updates" /> Sign me up for email updates
+        <br />
+        <input type="submit" name="submit riview" value="Submit riview">
+    </fieldset>
+</form>
+</body>
+</html>
