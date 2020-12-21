@@ -1,0 +1,42 @@
+/ *!
+* Khởi động Bootstrap - Tiếp tục v6.0.2 (https://startbootstrap.com/theme/resume)
+* Bản quyền 2013-2020 Bắt đầu Bootstrap
+* Được cấp phép theo MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
+* /
+( hàm  ( $ )  {
+"sử dụng nghiêm ngặt" ;  // Bắt đầu sử dụng nghiêm ngặt
+
+// Cuộn mượt bằng cách sử dụng jQuery dễ dàng
+$ ( 'a.js-scroll-trigger [href * = "#"]: not ([href = "#"])' ) . nhấp vào ( function  ( )  {
+nếu  (
+vị trí . tên đường dẫn . thay thế ( / ^ \ / / ,  "" )  ==
+cái này . tên đường dẫn . thay thế ( / ^ \ / / ,  "" )  &&
+vị trí . tên máy chủ  ==  cái này . tên máy chủ
+)  {
+var  target  =  $ ( this . hash ) ;
+target  =  mục tiêu . chiều dài
+? Mục tiêu
+: $ ( "[name ="  +  this . hash . slice ( 1 )  +  "]" ) ;
+if  ( target . length )  {
+$ ( "html, body" ) . hoạt hình (
+{
+scrollTop : mục tiêu . bù đắp ( ) . hàng đầu ,
+} ,
+1000 ,
+"easyInOutExpo"
+) ;
+trả về  sai ;
+}
+}
+} ) ;
+
+// Đóng menu đáp ứng khi nhấp vào liên kết kích hoạt cuộn
+$ ( ".js-scroll-trigger" ) . nhấp vào ( function  ( )  {
+$ ( ".navbar-sập" ) . sập ( "ẩn" ) ;
+} ) ;
+
+// Kích hoạt scrollspy để thêm lớp hiện hoạt vào các mục trên thanh điều hướng khi cuộn
+$ ( "phần thân" ) . cuộn giấy ( {
+target : "#sideNav" ,
+} ) ;
+} ) ( jQuery ) ;  // Kết thúc sử dụng nghiêm ngặt
