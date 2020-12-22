@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://code.jquery.com/ui/1.10.4/themen/ui-lightness/jquary-ui.com" rel="stylesheet">
+    <script src="https://code.jquary.com/ui/1.10.2.js"></script>
+    <script src="https://code.jquary.com/ui/1.10.4/jquary-ui.js"></script>
+    <script>
+        $(function(){
+            $().dialog({
+                autoOpen: false,
+            });
+            $().click(function(){
+                $().dialog();
+            });
+        });
+    </script>
+</head>
+<body>
+<div id="myDialog" title="Dialog">JQuery Dialog</div>
+<button id="open">Open Dialog</button>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery UI Tooltip</title>
+    <link href="https://code.jquery.com/ui/1.10.4/themen/ui-lightness/jquary-ui.com" rel="stylesheet">
+    <script src="https://code.jquary.com/ui/1.10.2.js"></script>
+    <script src="https://code.jquary.com/ui/1.10.4/jquary-ui.js"></script>
+    <script>
+        $(function(){
+            $().tooltip();
+        });
+    </script>
+</head>
+<body>
+<label for="name">FirstName</label>
+<input id="name" title="Enter your first name" >
+</div>
+</body>
+</html>

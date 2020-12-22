@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script>
+        //Basic Way
+        function Multiply(var1, var2, var3){
+            return (var1 * var2 * var3);
+        }
+        document.write("Basic Way:"+Multiply(10, 10, 8));
+        document.write("<br>");
+        //Function as Variable
+        var Multiply = function (var1, var2, var3){
+            return (var1, var2, var3);
+        }
+        document.write("Basic Way:"+Multiply(10, 10, 8));
+        document.write("<br>");
+        //Self Invoking functions
+        ( function () {
+            document.write("Self Invoking Function, Hello! I called myself");
+        })();
+        //Creating own function
+        $(document).ready(function (){
+            $.fn.myFunction = function (){
+                alert('You have successfully defined the function');
+            }
+            $(".call-btn").click(function (){
+                $.fn.myFunction;
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="div1"><h2>Functions in jQuery</h2></div>
+    <button type="button" class="call-btn">Click Me</button>
+</body>
+</html>

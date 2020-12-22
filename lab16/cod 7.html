@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootsrap/3.3.7/css/bootstrap.min.css".
+    <script scr="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" ></script>
+    <script crs="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#btnSubmit').click(function () {
+                $('#myAlart').show('fade');
+            });
+            $('#linkClose').click(function () {
+                $('#myAlert').hide('fade');
+            });
+        };
+    </script>
+</head>
+<body>
+<div class="container">
+    <button id="btnSubmit" class="alert alert-danger collapse">
+        Submit
+    </button>
+
+<br /><br />
+    <div id="myAlert" class="alert alert-danger ollapse">
+        <a id="linkClose" href="#" class="close">&time;</a>
+        <strong>Error!</strong> There is a problem submitting your from
+
+</div>
+</body>
+</html>
